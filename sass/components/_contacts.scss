@@ -1,0 +1,121 @@
+.contacts {
+  display: flex;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin-left: auto;
+  }
+}
+.container__contacts {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+.contacts__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+.contacts__number {
+  display: flex;
+  margin-left: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+  }
+}
+.contacts__number,
+.contacts__mail {
+  @media screen and (min-width: 1200px) {
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contacts__number:hover .contacts__icon,
+.contacts__number:focus .contacts__icon {
+  fill: $accent-color;
+}
+
+.contacts__mail {
+  display: flex;
+  align-items: center;
+  color: $primary-text-color;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &:hover {
+    color: $accent-color;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+  }
+}
+
+.contacts__mail:focus .contacts__icon,
+.contacts__mail:hover .contacts__icon {
+  fill: $accent-color;
+}
+.contacts__icon {
+  fill: $primary-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
+}
+.contacts__icon--envelope {
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contacts__icon--smartphone {
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,60 @@
+.logo__web {
+  color: $accent-color;
+  font-family: Raleway, ans-serif;
+  font-weight: 700;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+.logo__studio {
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+.logo__studio--footer,
+.logo__web--footer {
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+
+.logo__studio--footer {
+  color: $primary-white-color;
+  font-family: Raleway;
+  font-weight: 700;
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+.logo__web--footer {
+  color: $accent-color;
+  font-family: Raleway;
+  font-weight: 700;
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
