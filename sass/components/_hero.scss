@@ -7,7 +7,6 @@
   background-color: rgba(47, 48, 58, 1);
 }
 .hero--overlay {
-  max-width: 480px;
   max-height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -21,7 +20,6 @@
       url(../images/hero/mobile-hero@2x.jpg);
   }
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/tablet-hero.jpg);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -38,7 +36,7 @@
       url(../images/hero/desktop-hero.jpg);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero/desktop-hero@2x.jpg);
+        url(../images/hero/desktop-hero2x.jpg);
     }
   }
 }

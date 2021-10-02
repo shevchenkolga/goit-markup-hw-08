@@ -12,6 +12,10 @@
     display: none;
   }
 }
+.menu-container__links--margin {
+  display: inline-block;
+  margin-bottom: 302px;
+}
 .menu-container__contacts {
   display: inline-block;
   margin-top: auto;
@@ -39,7 +43,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 796px;
+  height: 100vh;
   background-color: $primary-white-color;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -64,7 +68,9 @@
     color: $accent-color;
   }
 }
-
+.menu-container__links--current {
+  color: $accent-color;
+}
 .menu-container__email {
   font-weight: 500;
   font-size: 24px;
@@ -115,9 +121,7 @@
 .menu-button:focus .icon-menu {
   fill: $accent-color;
 }
-.menu-container__item--margin {
-  margin-bottom: 302px;
-}
+
 .menu-container__phone {
   margin-bottom: 32px;
 }
