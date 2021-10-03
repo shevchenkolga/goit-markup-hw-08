@@ -38,7 +38,8 @@
 }
 .menu-container {
   display: none;
-  position: absolute;
+  position: fixed;
+  overflow-y: auto;
   z-index: 1;
   top: 0;
   left: 0;
@@ -92,7 +93,8 @@
   &::after {
     content: '';
     display: flex;
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 2px;
     height: 22px;
     background-color: rgba(33, 33, 33, 0.2);
@@ -111,10 +113,9 @@
 }
 .menu-container__sociallist {
   display: flex;
+  flex-wrap: wrap;
 }
-.menu-container__itemsocial:not(:last-child) {
-  margin-right: 20px;
-}
+
 .menu-button:hover .icon-close,
 .menu-button:focus .icon-close,
 .menu-button:hover .icon-menu,
